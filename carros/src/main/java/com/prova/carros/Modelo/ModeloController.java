@@ -31,7 +31,7 @@ public class ModeloController {
     }
 
     @GetMapping("/marca/{nome}")
-    public List<Modelo> listaModeloPorMarca(String nome) {
+    public List<Modelo> listaModeloPorMarca(@PathVariable String nome) {
         return modeloService.listaModelosPorMarca(nome);
     }
 
